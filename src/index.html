@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My AJAX jQuery App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Todo List</h1>
+        <table id="todoTable">
+            <thead>
+                <tr>
+                    <th>User ID</th>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Completed</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be inserted here -->
+            </tbody>
+        </table>
+        <div id="errorMessage" style="color: red;"></div>
+        <div id="loadingMessage" style="display: none;">Loading...</div>
+        <div id="successMessage" style="color: green;"></div>
+        <div id="pagination">
+            <button id="prevPage">Previous</button>
+            <span id="pageInfo"></span>
+            <button id="nextPage">Next</button>
+        </div>
+        <button id="fetchDataButton">Fetch Todos</button>
+    </div>
+</body>
+
+</html>
